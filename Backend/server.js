@@ -23,11 +23,11 @@ app.use(bodyParser.json())
 
 var mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://user1:user1@casestudy.4jdff.mongodb.net/ICTAKJOB?retryWrites=true&w=majority').then();
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
-    console.log('connected with mongoose');
-});
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', function () {
+//     console.log('connected with mongoose');
+// });
 
 
 app.use(function(req, res, next) {
